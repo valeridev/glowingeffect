@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Glowing emoji Effect</title>
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            .emoji {
+                font-size: 100px;
+                animation: glow-animation 0.5s infinite alternate;
+
+            }
+
+            @keyframes glow-animation {
+                0% {
+                    transform: scale(0.9);
+                    opacity: 0.1;
+                }
+
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="emoji"> ❤️ 🎃 👻 ✨ 💗</div>
+    </body>
+
+</html>
